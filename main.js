@@ -6,3 +6,12 @@ productos.forEach(function(producto){
     })
 })
 console.log('hola');
+
+let navbar = document.querySelector('header');
+
+window.addEventListener('scroll',()=>{
+    if(scrollY == 0){
+        navbar.style.background = 'transparent'
+        navbar.style.color = 'rgb(225,225,225)'
+    }
+});

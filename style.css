@@ -8,55 +8,36 @@ body {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
 
-.buscador {
-    height: 10px;
-}
-
-form>div {
-    display: flex;
-    background-color: white;
-    padding: 9px 22px 9px 26px;
-    border-radius: 30px;
-    border: 2px solid #000000bc;
-    margin-left: 30px;
-}
-
-form input {
-    border: none;
-    background: transparent;
-    font-weight: bold;
-    padding-left: 24px;
-    background-image: url(./Imagenes/buscador.png);
-    background-size: 16px;
-    background-repeat: no-repeat;
-    width: 0px;
-    transition: all 1s;
-}
-
-form input:focus {
-    outline: none;
-    width: 100px;
-}
-
 header{
     width: 100%;
-    height: 4rem;
+    height: 6rem;
     display: flex;
     background-color: #F5F6F5;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     animation: header 1s ease, opacidad 2s ease;
     position: fixed;
     z-index: 1000;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
-
+.carrito{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 20px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+.carrito img{
+    width: 50%;
+}
 header ul {
     display: flex;
     gap: 40px;
@@ -66,7 +47,7 @@ header ul {
 
 header li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #000;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -93,18 +74,13 @@ header li a:hover::after {
     transform: scaleX(1);
 }
 
-.logo {
-    height: 70px;
-    width: 80px;
-    position: absolute;
-    top: 0;
-    left: 50%;
+.logo{
+    width: 10rem;
 }
 
 #home {
-    height:40rem;
+    height: 90vh;
     width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1639704772864-3f08692a4848?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
