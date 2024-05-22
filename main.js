@@ -1,22 +1,46 @@
+
+//          Carrito De Compras  
 let cruz = document.getElementById('cruz-carrito');
 let carritoDeCompras = document.querySelector('.carrito-de-compras'); 
 let carrito = document.querySelector('#carrito');
 
+let bool = false;
 carrito.addEventListener('click', function(){
     carritoDeCompras.style.transform = 'translateX(0)'
+    bool = true
 })
-cruz.addEventListener('click', function(){
+if(bool){
+   cruz.addEventListener('click', function(){
     carritoDeCompras.style.transform = 'translateX(30rem)'
-})
+}) 
+}
 
+
+
+//          Redireccion a página de mostrador      
+import {zapatillas} from "./zapatillas.js";
 let productos = document.querySelectorAll('.articulo');
-productos.forEach(function(producto){
-    producto.addEventListener('click',function(){
-        backgroundImage = window.getComputedStyle(this).backgroundImage;
-        let imagen = backgroundImage.slice(5, -2);
-        console.log(imagen)
-        let h3 = this.querySelector('.info-producto h3');
-            console.log(h3)  
-             window.location.href = 'mostrador.html'
-    })
-})
+let zapatillaActual = ''
+
+    productos.forEach(function(producto){
+        producto.addEventListener('click',function(){
+            let imagenDeFondo = backgroundImage(this);
+            compararZapatilla(imagenDeFondo);
+            window.location.href = 'mostrador.html';  
+            zapatillaActual;
+        });
+    });   
+    let backgroundImage = function(e){
+        return window.getComputedStyle(e).backgroundImage.slice(5, -2);
+    }
+    
+    let compararZapatilla = function(e){
+        let todasLasZapatillas = Object.values(zapatillas).flat();
+        todasLasZapatillas.forEach(function(zapatilla){
+            if(zapatilla.imagen == e){
+                zapatillaActual =  zapatilla.imagen
+            };
+    });
+};
+
+
