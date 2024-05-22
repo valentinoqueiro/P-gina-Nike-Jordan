@@ -17,7 +17,7 @@ let zapatillas = {
          nombre: 'Zapatillas Jordan Low Celeste',
          precio: 55 }
     ],
-    mid: [
+    high: [
         {id: 5,
          imagen: 'https://nikearprod.vtexassets.com/arquivos/ids/762616-1200-1200?width=1200&height=1200&aspect=true',
          nombre: 'Zapatillas Jordan Hight Celestes',
@@ -35,8 +35,22 @@ let zapatillas = {
          nombre: 'Zapatillas Jordan Hight Verdes',
          precio: 50 }
     ],
-    high: [
-        // Aquí puedes agregar más objetos para las zapatillas de alta altura
+     basketball: [
+         {id: 9,
+         imagen: './Imagenes/Zapatillas-basquet1_1.jpg',
+         nombre: 'Zapatillas Jordan Hight Verdes',
+         precio: 50 },
+        {id: 10,
+         imagen: './Imagenes/Zapatilla-basket5.jpg',
+         nombre: 'Zapatillas Jordan Hight Verdes',
+         precio: 50 },
+        {id: 11,
+         imagen: './Imagenes/Zapatillas-basquet3\ \(1\).jpg',
+         nombre: 'Zapatillas Jordan Hight Verdes',
+         precio: 50 },
+        {id: 12,
+         imagen: './Imagenes/Zapatillas-basquet4\ \(2\).jpg',
+         nombre: 'Zapatillas Jordan Hight Verdes',
+         precio: 50 },
     ]
 };
-console.log(zapatillas.low[1])
