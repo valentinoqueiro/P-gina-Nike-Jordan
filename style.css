@@ -129,12 +129,12 @@ header li a:hover::after {
     width: 8rem;
 }
 
-video {
-    height: auto;
-    width: 80%;
+.home-img {
+    height: calc(100vh - 6rem);
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
 }
 #home{
     width: 100%;
