@@ -16,20 +16,22 @@ export let abrirCarrito = carrito.addEventListener('click', function(){
 
 
 //!          Redireccion a página de mostrador
-//!                        arreglar
+
 
 import {zapatillas} from "./zapatillas.js";
 let productos = document.querySelectorAll('.articulo');
-let zapatillaActual = ''
+let zapatillaActual = '';
+export let todasLasZapatillas = Object.values(zapatillas).flat();
 
     productos.forEach(function(producto){
         producto.addEventListener('click',function(){
             let imagenDeFondo = backgroundImage(this);
             compararZapatilla(imagenDeFondo);
-            window.location.href = 'mostrador.html';  
-            zapatillaActual;
+            localStorage.setItem('urlZapatilla', zapatillaActual);
+            window.location.href = 'mostrador.html'; 
         });
-    });   
+   });   
+
     let backgroundImage = function(e){
         return window.getComputedStyle(e).backgroundImage.slice(5, -2);
     }
@@ -39,8 +41,8 @@ let zapatillaActual = ''
         todasLasZapatillas.forEach(function(zapatilla){
             if(zapatilla.imagen == e){
                 zapatillaActual =  zapatilla.imagen
+                
             };
     });
 };
-
 

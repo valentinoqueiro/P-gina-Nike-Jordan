@@ -1,4 +1,4 @@
-export let zapatillas = {
+export const zapatillas = {
     low: [
         {id: 1,
          imagen: 'https://nikearprod.vtexassets.com/arquivos/ids/730441-1200-1200?width=1200&height=1200&aspect=true',
@@ -54,3 +54,4 @@ export let zapatillas = {
          precio: 50 },
     ]
 };
+export const categorias = Object.keys(zapatillas);

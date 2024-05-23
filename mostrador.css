@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
 .mostrador{
     display: flex;
     height: 100%;
@@ -5,13 +10,19 @@
     padding-top: 7rem;
     justify-content: space-around;
 }
-
+.producto-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
 .producto-imagen img{
     width: 40rem;
 }
 
-.producto-info h2{
-    font-size: 3rem;
+#titulo-mostrador{
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
 }
 .producto-info h3{
     font-size: 1rem;
@@ -29,9 +40,6 @@
     align-items: center;
     display: flex;
     gap: 1rem;
-}
-.colores img:nth-child(1){
-    border: 1px #000 solid;
 }
 
 .talle{
