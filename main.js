@@ -1,23 +1,23 @@
-
 //          Carrito De Compras  
 let cruz = document.getElementById('cruz-carrito');
 let carritoDeCompras = document.querySelector('.carrito-de-compras'); 
 let carrito = document.querySelector('#carrito');
 
-let bool = false;
-carrito.addEventListener('click', function(){
-    carritoDeCompras.style.transform = 'translateX(0)'
-    bool = true
-})
-if(bool){
-   cruz.addEventListener('click', function(){
-    carritoDeCompras.style.transform = 'translateX(30rem)'
-}) 
-}
+export let abrirCarrito = carrito.addEventListener('click', function(){
+        carritoDeCompras.style.transform = 'translateX(0)';
+        cruz.style.display = 'flex';
+    })
+ export let cerrarCarrito = cruz.addEventListener('click', function(){
+        carritoDeCompras.style.transform = 'translateX(30rem)';
+        cruz.style.display = 'none';
+    }) 
 
 
 
-//          Redireccion a página de mostrador      
+
+//!          Redireccion a página de mostrador
+//!                        arreglar
+
 import {zapatillas} from "./zapatillas.js";
 let productos = document.querySelectorAll('.articulo');
 let zapatillaActual = ''
