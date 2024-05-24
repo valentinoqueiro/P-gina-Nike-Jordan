@@ -15,24 +15,37 @@ import { abrirCarrito, cerrarCarrito } from "./main.js";
 
 //          zapatilla seleccionada
 const zapatillaSeleccionada = localStorage.getItem('urlZapatilla');
-    imagenActual.src = zapatillaSeleccionada;
+imagenActual.src = zapatillaSeleccionada;
 
 import { todasLasZapatillas } from "./main.js";
 import { categorias } from "./zapatillas.js";
 import { zapatillas } from "./zapatillas.js";
 
-//          Cambiar Opcopnes de colores
-//let encontarCategoria = function(zapatilla){
-//   categorias.forEach(function(key){
-//       zapatillaCategoria = '';
-//       if(zapatilla == '' && zapatillas[key].some(zapatillas => zapatilla.imagen == zapatilla)){
-//       zapatillaCategoria = key;
-//       }
-//});
-//return zapatillaCategoria;
-//};
-//console.log(encontarCategoria(zapatillaSeleccionada))
 
+
+//*          Encontrar la categoría del producto seleccionado 
+let zapatillaCategoria = '';
+let encontrarCategoria = function(zapatillaURL) {
+    categorias.forEach(function(key) {
+        if (zapatillas[key].some(zap => zap.imagen === zapatillaURL)) {
+            zapatillaCategoria = key;
+        }
+    });
+};
+
+//*           cambiar las opciones de colores segun el producto
+let opcioesDeColores = ()=>{
+    for(let i = 0; i <= zapatillas[zapatillaCategoria].length; i++){
+        if (zapatillas[zapatillaCategoria][i] && zapatillas[zapatillaCategoria][i].imagen) {
+        zapatillasColores[i].src = zapatillas[zapatillaCategoria][i].imagen;
+        }
+    }
+}
+
+
+
+encontrarCategoria(zapatillaSeleccionada);
+opcioesDeColores();
 //          ingresar imagen de zapatilla seleccionada
 zapatillasColores.forEach(function(zapatillaColor){
     if(zapatillaSeleccionada == zapatillaColor.src){
@@ -44,6 +57,7 @@ zapatillasColores.forEach(function(zapatillaColor){
         comparar(zapatillaColor);
     });
 });
+
 
 let comparar = function(e){
     todasLasZapatillas.forEach(function(zapatilla){

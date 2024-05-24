@@ -18,6 +18,7 @@
 }
 .producto-imagen img{
     width: 40rem;
+    border: solid 1px rgb(220, 220, 220);
 }
 
 #titulo-mostrador{

@@ -9,7 +9,7 @@ body {
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'Bebas Neue', sans-serif;
-    background-color: #f5f6f5;
+    background-color: #ffffff;
 }
 
 
@@ -270,16 +270,16 @@ h2{
 }
 
 .low-cont {
-    margin: 20px;
+    margin: 1rem;
     width: 400px;
     height: 300px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 0rem;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-    background-color: #F5F6F5;
+    background-color: #F6F6F6;
+    border: solid 1px #929292;
 }
 
 .low-producto {
@@ -288,7 +288,6 @@ h2{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 .info-producto {
