@@ -129,18 +129,15 @@ header li a:hover::after {
     width: 8rem;
 }
 
-.home-img {
-    height: calc(100vh - 6rem);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-}
 #home{
     width: 100%;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(https://s3.amazonaws.com/nikeinc/assets/33068/Ho14_SNP_AT_ZOOM_JHarden_01_hd_1600.jpg?1410297027);
+    background-size: cover;
+    background-position: center left;
 }
 
 h1 {
@@ -242,44 +239,26 @@ h2{
 
 /* !PANDA */
 
-.panda {
-    height: 25rem;
-    width: auto;
-    margin: 4rem;
-    display: flex;
-    background-color: black;
-    color: aliceblue;
-    align-items: center;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-    transition: all 0.5s;
-}
-
-
-.panda:hover {
-    transform: scale(1.05);
-    transition: all 0.5s;
-}
-
-.panda-img {
+#panda{
     width: 100%;
-    height: 100%;
-    background-image: url(./Imagenes/jordan-panda.jpeg);
-    background-repeat: no-repeat;
+    height: 35rem;
     background-position: center center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    background-color: #D17AB9;
+    align-items: center;
 }
-
-.panda p {
-    font-size: 3rem;
-    font-family: 'Bebas Neue', sans-serif;
-    padding: 2rem;
-}
-
-.panda p span {
-    color: red;
+#panda img{
+    width: auto;
+    height: 100%;
+    margin-left: 5rem;
 }
 #Low {
     height: 500px;
+    width: 100%;
+    
 }
 
 /* !LOW */
