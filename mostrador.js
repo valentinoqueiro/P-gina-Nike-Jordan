@@ -3,10 +3,13 @@ let zapatillasColores = document.querySelectorAll('.zapatillas-color');
 let logo = document.querySelector('.logo');
 let h2 = document.getElementById('titulo-mostrador');
 
-//        Logo redireccoón
-logo.addEventListener('click', function(){
+//        Logo redirección
+export let logoRedireccion = function(){
+    logo.addEventListener('click', function(){
     window.location.href = 'index.html';  
 });
+}
+
 
 //          Slider de carrito
 import { abrirCarrito, cerrarCarrito } from "./main.js";

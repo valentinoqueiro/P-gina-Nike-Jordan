@@ -249,6 +249,7 @@ h2{
     justify-content: space-between;
     background-color: #D17AB9;
     align-items: center;
+    margin-top: 3rem;
 }
 #panda img{
     width: auto;
@@ -279,7 +280,6 @@ h2{
     justify-content: center;
     align-items: center;
     background-color: #F6F6F6;
-    border: solid 1px #929292;
 }
 
 .low-producto {
