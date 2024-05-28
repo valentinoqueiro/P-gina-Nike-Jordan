@@ -37,13 +37,13 @@ let encontrarCategoria = function(zapatillaURL) {
 };
 
 //*           cambiar las opciones de colores segun el producto
-let opcioesDeColores = ()=>{
+export let opcioesDeColores = ()=>{
     for(let i = 0; i <= zapatillas[zapatillaCategoria].length; i++){
         if (zapatillas[zapatillaCategoria][i] && zapatillas[zapatillaCategoria][i].imagen) {
         zapatillasColores[i].src = zapatillas[zapatillaCategoria][i].imagen;
-        }
-    }
-}
+        };
+    };
+};
 
 
 
