@@ -7,6 +7,7 @@ export const zapatillas = {
         {id: "L2",
          imagen: 'https://nikearprod.vtexassets.com/arquivos/ids/730578-1200-1200?width=1200&height=1200&aspect=true',
          nombre: 'Air Jordan 1 Low Violetas',
+         nombre: 'Air Jordan 1 Low Violetas',
          precio: 55 },
         {id: "L3",
          imagen: 'https://nikearprod.vtexassets.com/arquivos/ids/702715-1200-1200?width=1200&height=1200&aspect=true',

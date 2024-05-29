@@ -60,13 +60,13 @@ header{
    align-items: center;
 }
 .header1{
-    background-color: #bfbfbf;
+    background-color: #fff;
     height: 40%;
     
 }
 .header2{
 height: 60%;
-    background-color: #f5f6f5;
+    background-color: #F6F6F6;
 }
 .header3{
     width: 100%;
@@ -76,7 +76,7 @@ height: 60%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #bfbfbf;
+    background-color: #fff;
 }
 .header3 a{
     color: #fff;
@@ -110,7 +110,7 @@ header li a::after {
     content: "";
     height: 2px;
     width: 98%;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -152,90 +152,6 @@ h2{
     padding-top: 2rem;
     margin: 0;
 }
-.subtitulos{
-    display: flex;
-    width: 100%;
-    height: 5rem;
-    align-items: end;
-    gap: 1rem;
-    margin-bottom: 3rem;
-}
-.linea-sub{
-    width: 80%;
-    height: 2px;
-    background-color: #000;
-}
-#destacado{
-    gap: 5px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-#destacado img{
-    width: 25rem;
-    height:25rem;
-}
-.contenedor-articulo1,
-.contenedor-articulo2,
-.contenedor-articulo3 {
-    width: auto;
-    height: auto;
-    background-color: #f5f6f5;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-.contenedor1,
-.contenedor2,
-.contenedor3{
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    transition: 0.5s;
-}
-.contenedor1{
-    background-image: url(./imagenes/Jordan-travisScott.png);
-}
-.contenedor2 {
-    background-image: url(./imagenes/Jordan-Dior.jpg);
-}
-.contenedor3 {
-    background-image: url(./imagenes/Jordan-Balvin1-1.png);
-}
-.contenedor1 img,
-.contenedor2 img,
-.contenedor3 img {
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-}
-.contenedor1 img:hover,
-.contenedor2 img:hover,
-.contenedor3 img:hover {
-    opacity: 0;
-    transition: 0.5s;
-}
-.info-producto {
-    display: flex;
-    font-size: 14px;
-    padding: 3px;
-}
-
-.info-producto h3 {
-    margin-left: 10px;
-}
-
-.info-producto p {
-    margin-right: 30px;
-}
- .boton-destacado {
-    width: 70px;
-    background-color: rgb(0, 0, 0);
-    color: #ffff;
-    border-radius: 10px;
-    justify-content: center;
-    display: flex;
-}
 
 /* !PANDA */
 
@@ -263,12 +179,6 @@ h2{
 }
 
 /* !LOW */
-
-.Zapatillas-low {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .low-cont {
     margin: 1rem;
@@ -426,24 +336,6 @@ h2{
     margin: 0 30px;
     font-weight: 600;
     font-size: 25px;
-}
-
-/* *HIGHT */
-
-.Producto-1{
-    background-image: url(https://nikearprod.vtexassets.com/arquivos/ids/762616-1200-1200?width=1200&height=1200&aspect=true);
-}
-
-.Producto-2 {
-    background-image: url(https://nikearprod.vtexassets.com/arquivos/ids/714988-1000-1000?v=638236632637370000&width=1000&height=1000&aspect=true);
-}
-
-.Producto-3 {
-    background-image: url(https://nikearprod.vtexassets.com/arquivos/ids/812141-1000-1000?v=638382458013470000&width=1000&height=1000&aspect=true);
-}
-
-.Producto-4 {
-    background-image: url(https://nikearprod.vtexassets.com/arquivos/ids/660284-1000-1000?v=638221833963800000&width=1000&height=1000&aspect=true);
 }
 /* *ESLOGAN */
 
@@ -697,3 +589,23 @@ textarea:focus {
 footer hr {
     display: none;
 }
+swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
